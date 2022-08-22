@@ -912,7 +912,19 @@ begin
 
           Inc(RunPos);
         end;
+
+        // multiple tag
+        while RunPos <= Length(CurLine) do
+        begin
+          if CurLine[RunPos] = '<' then
+          begin
+            CurLevel := 0;
+            Break;
+          end;
+          Inc(RunPos);
+        end;
       end;
+
       Inc(RunPos);
     end;
 
@@ -952,7 +964,7 @@ begin
   case FLine[Run] of
     '0'..'9', 'a'..'z', 'A'..'Z', '_', '.', ':', '-':
       Result := True;
-    else if FLine[Run] > 'À' then // TODO: this here is very vague, see above
+    else if FLine[Run] > '?' then // TODO: this here is very vague, see above
       Result := True
     else
       Result := False;

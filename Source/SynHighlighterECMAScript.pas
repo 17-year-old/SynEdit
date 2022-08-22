@@ -38,6 +38,8 @@ unit SynHighlighterECMAScript;
 
 {$I SynEdit.inc}
 
+{$HIGHCHARUNICODE ON}
+
 interface
 
 uses
