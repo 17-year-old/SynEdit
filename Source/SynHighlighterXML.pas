@@ -1,4 +1,4 @@
-{-------------------------------------------------------------------------------
+﻿{-------------------------------------------------------------------------------
 The contents of this file are subject to the Mozilla Public License
 Version 1.1 (the "License"); you may not use this file except in compliance
 with the License. You may obtain a copy of the License at
@@ -10,7 +10,7 @@ the specific language governing rights and limitations under the License.
 
 The Original Code is: SynHighlighterXML.pas, released 2000-11-20.
 The Initial Author of this file is Jeff Rafter.
-Unicode translation by Ma�l H�rz.
+Unicode translation by Ma雔 H鰎z.
 All Rights Reserved.
 
 Contributors to the SynEdit and mwEdit projects are listed in the
@@ -964,7 +964,7 @@ begin
   case FLine[Run] of
     '0'..'9', 'a'..'z', 'A'..'Z', '_', '.', ':', '-':
       Result := True;
-    else if FLine[Run] > '?' then // TODO: this here is very vague, see above
+    else if FLine[Run] > 'À' then // TODO: this here is very vague, see above
       Result := True
     else
       Result := False;
